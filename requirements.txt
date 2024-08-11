@@ -1,0 +1,5 @@
+aiofiles==24.1.0
+aiohttp==3.9.5
+Pillow==10.4.0
+pytesseract==0.3.10
+transformers==4.44.0
