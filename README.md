@@ -1,2 +1,6 @@
-# ad-filter
-Small filter for python. Full async
+# Ad-Filter
+Фильтр рекламы для Python по тексту и картинке. (async)
+C использованием обученой модели ии из ```transformers```, поиск текста на картинке  - ```pytesseract + Pillow```
+
+Перед использованием поиска рекламы через картинку посмотрите файл ```utils/image_filter_ad.py``` в нем есть обязательный к настройке пункт:
+``` pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe' ```
