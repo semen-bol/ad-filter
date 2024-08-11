@@ -22,7 +22,7 @@ async def aiohttp_downloadImg(url: str) -> str | None:
             else:
                 return None
 
-async def ad_findPhoto(url: str | None) -> bool | None:
+async def ad_findPhoto(url: str | None) -> str | None:
     if url != None:
         file = await aiohttp_downloadImg(url)
 
