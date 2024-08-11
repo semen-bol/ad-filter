@@ -1,4 +1,5 @@
 # Ad-Filter
+## Start
 Фильтр рекламы для Python по тексту и картинке. (async)
 C использованием обученой модели ии из ```transformers```, поиск текста на картинке  - ```pytesseract + Pillow```
 
