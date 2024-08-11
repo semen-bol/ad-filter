@@ -3,7 +3,7 @@ import pytesseract
 from PIL import Image
 
 # Настройка пути к tesseract (если необходимо)
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\введите_свой_путь_до_tesseract-ocr!'
 
 def gennaming(length):
     characters = string.ascii_letters + string.digits
