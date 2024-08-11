@@ -8,7 +8,7 @@ C использованием обученой модели ии из ```transf
 Требуется достаточно мощная машина. У меня все работает на кфг rtx 3050 + i5 12400f и 16gb ram где 1гб для пайтона в пике.
 
 start.py:
-```
+```python
 import asyncio
 
 from utils.image_filter_ad import ad_findPhoto
