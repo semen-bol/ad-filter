@@ -15,9 +15,11 @@ async def aiohttp_downloadImg(url: str) -> str | None:
         async with session.get(url) as resp:
             if resp.status == 200:
                 s = f'{gennaming(20)}.jpg'
+                
                 f = await aiofiles.open(f'./utils/image/{s}', mode='wb')
                 await f.write(await resp.read())
                 await f.close()
+                
                 return f"./utils/image/{s}"
             else:
                 return None
