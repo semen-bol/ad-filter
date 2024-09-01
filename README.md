@@ -1,6 +1,6 @@
 # Ad-Filter
 
-!!! INSTALL THENSORFLOW !!!
+!!! INSTALL TENSORFLOW !!!
 
 ``` python3 -m pip install tensorflow[and-cuda] ```
 ## Start
