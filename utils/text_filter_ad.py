@@ -6,6 +6,7 @@ from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassifica
 # Инициализация модели для поиска схожих текстов
 classifier = pipeline("zero-shot-classification", model="joeddav/xlm-roberta-large-xnli")
 
+# 1 ai
 async def find_similar_texts(text, candidate_labels=["scam", "spam", "phishing", "job offer", "vacancy"], threshold=0.70):
     try:
         result = await asyncio.to_thread(classifier, text, candidate_labels)
@@ -23,7 +24,7 @@ async def find_similar_texts(text, candidate_labels=["scam", "spam", "phishing",
         else:
             return None, best_score
     except TypeError as err: pass
-
+# 2 ai 
 model_path = "RUSpam/spam_deberta_v4"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForSequenceClassification.from_pretrained(model_path)
