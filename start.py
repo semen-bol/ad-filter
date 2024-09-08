@@ -1,7 +1,7 @@
 import asyncio
 
 from utils.image_filter_ad import ad_findPhoto
-from utils.text_filter_ad import find_similar_texts
+from utils.text_filter_ad import find_similar_texts, #predict | user predict if u need 2 ai
 
 async def main():
     text = await ad_findPhoto("url") # get photo and text in that
